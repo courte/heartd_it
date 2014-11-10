@@ -1,4 +1,8 @@
 function TwitterService(keys) {
-  this.consumerKey = keys.consumerKey;
-  this.consumerSecret = keys.consumerSecret;
+  this.consumerKey = twitterKeys.consumerKey;
+  this.consumerSecret = twitterKeys.consumerSecret;
+  this.accessToken = twitterKeys.accessToken;
+  this.accessTokenSecret = twitterKeys.accessTokenSecret;
+  this.apiBase = 'https://api.twitter.com/1.1';
+  this.bearerToken = "";
 }
