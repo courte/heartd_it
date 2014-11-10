@@ -6,3 +6,7 @@ function TwitterService(keys) {
   this.apiBase = 'https://api.twitter.com/1.1';
   this.bearerToken = "";
 }
+
+TwitterService.prototype.encodedAuth = function() {
+  return window.btoa(this.consumerKey + ":" + this.consumerSecret);
+};
