@@ -1,10 +1,10 @@
 function TwitterService(keys) {
-  this.consumerKey = twitterKeys.consumerKey;
-  this.consumerSecret = twitterKeys.consumerSecret;
-  this.accessToken = twitterKeys.accessToken;
-  this.accessTokenSecret = twitterKeys.accessTokenSecret;
+  this.consumerKey = keys.consumerKey;
+  this.consumerSecret = keys.consumerSecret;
+  this.accessToken = keys.accessToken;
+  this.accessTokenSecret = keys.accessTokenSecret;
   this.apiBase = 'https://api.twitter.com/1.1';
-  this.bearerToken = twitterKeys.bearerToken;
+  this.bearerToken = keys.bearerToken;
 }
 
 TwitterService.prototype.encodedAuth = function() {
