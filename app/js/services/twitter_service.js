@@ -4,15 +4,48 @@ function TwitterService(keys) {
   this.accessToken = twitterKeys.accessToken;
   this.accessTokenSecret = twitterKeys.accessTokenSecret;
   this.apiBase = 'https://api.twitter.com/1.1';
-  this.bearerToken = "";
+  this.bearerToken = twitterKeys.bearerToken;
 }
 
 TwitterService.prototype.encodedAuth = function() {
-  return window.btoa(this.consumerKey + ":" + this.consumerSecret);
+  return btoa(this.consumerKey + ":" + this.consumerSecret);
 };
 
-function setHeader(xhr) {
-  xhr.setRequestHeader('Authorization', 'Basic ' + this.encodedAuth());
-  xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded;charset=UTF-8');
-  xhr.withCredentials = true;
-}
+TwitterService.prototype.auth = function() {
+  $.ajax({
+    type: 'POST',
+    url: 'https://api.twitter.com/oauth2/token',
+    headers: {
+      'Authorization': 'Basic ' + this.encodedAuth(),
+      'Content-Type': 'application/x-www-form-urlencoded;charset=UTF-8'
+    },
+    data: {'grant_type': 'client_credentials'},
+    dataType: 'json'
+  })
+  .done( function( response ) {
+    console.log('hello');
+    console.log(response);
+    if(response.token_type === "bearer") {
+      this.bearerToken = response.access_token;
+    }
+  }.bind(this))
+  .fail( function( response ) {
+    console.log(response);
+    console.log("Your authorization did not go through.");
+  });
+};
+
+TwitterService.prototype.loadFavorites = function(username, count) {
+  $.ajax({
+    type: 'GET',
+    url: this.apiBase + '/favorites/list.json',
+    headers: {
+      'Authorization': 'Bearer ' + this.bearerToken
+    },
+    data: {'username': username, 'count': count},
+    dataType: 'JSON'
+  })
+  .done( function(response) {
+    console.log(response);
+  });
+};
