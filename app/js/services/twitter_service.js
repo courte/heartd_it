@@ -23,8 +23,6 @@ TwitterService.prototype.auth = function() {
     dataType: 'json'
   })
   .done( function( response ) {
-    console.log('hello');
-    console.log(response);
     if(response.token_type === "bearer") {
       this.bearerToken = response.access_token;
     }
@@ -36,6 +34,7 @@ TwitterService.prototype.auth = function() {
 };
 
 TwitterService.prototype.loadFavorites = function(username, count) {
+
   $.ajax({
     type: 'GET',
     url: this.apiBase + '/favorites/list.json',
@@ -46,6 +45,5 @@ TwitterService.prototype.loadFavorites = function(username, count) {
     dataType: 'JSON'
   })
   .done( function(response) {
-    console.log(response);
   });
 };
