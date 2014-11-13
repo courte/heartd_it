@@ -1634,8 +1634,7 @@ SAMPLE_TWEETS = [
     "profile_background_image_url":"http:\/\/abs.twimg.com\/images\/themes\/theme14\/bg.gif",
     "profile_background_image_url_https":"https:\/\/abs.twimg.com\/images\/themes\/theme14\/bg.gif",
     "profile_background_tile":true,"profile_image_url":"http:\/\/pbs.twimg.com\/profile_images\/378800000507428879\/ad3cf12f8a07722cae98d985d88aa399_normal.jpeg",
-    "* Connection #0 to host api.twitter.com left intact
-profile_image_url_https":"https:\/\/pbs.twimg.com\/profile_images\/378800000507428879\/ad3cf12f8a07722cae98d985d88aa399_normal.jpeg",
+    "profile_image_url_https":"https:\/\/pbs.twimg.com\/profile_images\/378800000507428879\/ad3cf12f8a07722cae98d985d88aa399_normal.jpeg",
   "profile_link_color":"99CCCC",
   "profile_sidebar_border_color":"FFFFFF",
   "profile_sidebar_fill_color":"EFEFEF",
@@ -1688,4 +1687,4 @@ profile_image_url_https":"https:\/\/pbs.twimg.com\/profile_images\/3788000005074
     "possibly_sensitive":false,
     "lang":"en"
   }
-]
+];
