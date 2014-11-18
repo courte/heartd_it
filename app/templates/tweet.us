@@ -1,0 +1,4 @@
+<div class="tweet tweet_<%= id_str %>">
+  <strong><%= screen_name %></strong>
+  <%= text %>
+</div>

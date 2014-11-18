@@ -425,8 +425,8 @@ SAMPLE_TWEETS = [
     "in_reply_to_user_id_str":null,
     "in_reply_to_screen_name":null,
     "user":
-      { "id":588743,"i
-        d_str":"588743",
+      { "id":588743,
+      "id_str":"588743",
     "name":"Jen Myers",
     "screen_name":"antiheroine",
     "location":"Chicago",
@@ -485,8 +485,8 @@ SAMPLE_TWEETS = [
     "in_reply_to_user_id_str":null,
     "in_reply_to_screen_name":null,
     "user":
-      { "id":817083,"i
-        d_str":"817083",
+      { "id":817083,
+      "id_str":"817083",
     "name":"EricaJoy",
     "screen_name":"EricaJoy",
     "location":"San Francisco-ish",
@@ -725,8 +725,8 @@ SAMPLE_TWEETS = [
     "in_reply_to_user_id_str":null,
     "in_reply_to_screen_name":null,
     "user":
-      { "id":116276133
-        ,"id_str":"116276133",
+      { "id":116276133,
+      "id_str":"116276133",
     "name":"Hacker News",
     "screen_name":"HNTweets",
     "location":"",
@@ -1026,8 +1026,8 @@ SAMPLE_TWEETS = [
     "in_reply_to_user_id_str":null,
     "in_reply_to_screen_name":null,
     "user":
-      { "id":366222792
-        ,"id_str":"366222792",
+      { "id":366222792,
+      "id_str":"366222792",
     "name":"Anna Megill",
     "screen_name":"cynixy",
     "location":"Washington DC",
@@ -1139,8 +1139,8 @@ SAMPLE_TWEETS = [
     "in_reply_to_user_id":588743,"in_reply_to_user_id_str":"588743",
     "in_reply_to_screen_name":"antiheroine",
     "user":
-      { "id":588743,"i
-        d_str":"588743",
+      { "id":588743,
+      "id_str":"588743",
     "name":"Jen Myers",
     "screen_name":"antiheroine",
     "location":"Chicago",
@@ -1199,8 +1199,8 @@ SAMPLE_TWEETS = [
     "in_reply_to_user_id_str":null,
     "in_reply_to_screen_name":null,
     "user":
-      { "id":588743,"i
-        d_str":"588743",
+      { "id":588743,
+      "id_str":"588743",
     "name":"Jen Myers",
     "screen_name":"antiheroine",
     "location":"Chicago",
@@ -1262,8 +1262,8 @@ SAMPLE_TWEETS = [
     "in_reply_to_user_id_str":null,
     "in_reply_to_screen_name":null,
     "user":
-      { "id":118369820
-        ,"id_str":"118369820",
+      { "id":118369820,
+        "id_str":"118369820",
     "name":"Shadow And Act",
     "screen_name":"shadowandact",
     "location":"New York City",
@@ -1605,8 +1605,8 @@ SAMPLE_TWEETS = [
     "in_reply_to_user_id_str":null,
     "in_reply_to_screen_name":null,
     "user":
-      { "id":116276133
-        ,"id_str":"116276133",
+      { "id":116276133,
+        "id_str":"116276133",
     "name":"Hacker News",
     "screen_name":"HNTweets",
     "location":"",
@@ -2109,8 +2109,8 @@ SAMPLE_TWEETS = [
     "in_reply_to_user_id_str":null,
     "in_reply_to_screen_name":null,
     "user":
-      { "id":820585,"i
-        d_str":"820585",
+      { "id":820585,
+      "id_str":"820585",
     "name":"Baratunde",
     "screen_name":"baratunde",
     "location":"Brooklyn, NY",
@@ -2174,8 +2174,8 @@ SAMPLE_TWEETS = [
     "in_reply_to_user_id_str":null,
     "in_reply_to_screen_name":null,
     "user":
-      { "id":260613013
-        2,"id_str":"2606130132",
+      { "id":2606130132,
+        "id_str":"2606130132",
     "name":"Julie Torres",
     "screen_name":"JulieTorero",
     "location":"Atlanta, GA",
@@ -2184,40 +2184,56 @@ SAMPLE_TWEETS = [
     "url":"http:\/\/t.co\/sjsRvhhnkI",
 
     "entities":
-      { "url":{"urls":[{"url":"http:\/\/t.co\/sjsRvhhnkI",
-    "expanded_url":"http:\/\/www.julietorres.me\/",
-    "display_url":"julietorres.me",
-    "indices":[0,22]}]},"description":{"urls":[]}},"protected":false,
-    "followers_count":201,"friends_count":382,"listed_count":6,"created_at":"Sat Jul 05 21:11:58 +0000 2014",
-    "favourites_count":706,"utc_offset":null,
-    "time_zone":null,
-    "geo_enabled":false,
-    "verified":false,
-    "statuses_count":607,"lang":"en",
-    "contributors_enabled":false,
-    "is_translator":false,
-    "is_translation_enabled":false,
-    "profile_background_color":"C0DEED",
-    "profile_background_image_url":"http:\/\/abs.twimg.com\/images\/themes\/theme1\/bg.png",
-    "profile_background_image_url_https":"https:\/\/abs.twimg.com\/images\/themes\/theme1\/bg.png",
-    "profile_background_tile":false,
-    "profile_image_url":"http:\/\/pbs.twimg.com\/profile_images\/485541194575785984\/WpNi1ijO_normal.jpeg",
-    "profile_image_url_https":"https:\/\/pbs.twimg.com\/profile_images\/485541194575785984\/WpNi1ijO_normal.jpeg",
-    "profile_banner_url":"https:\/\/pbs.twimg.com\/profile_banners\/2606130132\/1406463496",
-    "profile_link_color":"0084B4",
-    "profile_sidebar_border_color":"C0DEED",
-    "profile_sidebar_fill_color":"DDEEF6",
-    "profile_text_color":"333333",
-    "profile_use_background_image":true,
-    "default_profile":true,
-    "default_profile_image":false,
-    "following":false,
-    "follow_request_sent":false,
-    "notifications":false},"geo":null,
+      { "url":
+        { "urls":
+          [
+            { "url":"http:\/\/t.co\/sjsRvhhnkI",
+              "expanded_url":"http:\/\/www.julietorres.me\/",
+              "display_url":"julietorres.me",
+              "indices":[0,22]
+            }
+          ]
+        },
+        "description": {"urls":[]}
+      },
+      "protected":false,
+      "followers_count":201,
+      "friends_count":382,
+      "listed_count":6,
+      "created_at":"Sat Jul 05 21:11:58 +0000 2014",
+      "favourites_count":706,"utc_offset":null,
+      "time_zone":null,
+      "geo_enabled":false,
+      "verified":false,
+      "statuses_count":607,
+      "lang":"en",
+      "contributors_enabled":false,
+      "is_translator":false,
+      "is_translation_enabled":false,
+      "profile_background_color":"C0DEED",
+      "profile_background_image_url":"http:\/\/abs.twimg.com\/images\/themes\/theme1\/bg.png",
+      "profile_background_image_url_https":"https:\/\/abs.twimg.com\/images\/themes\/theme1\/bg.png",
+      "profile_background_tile":false,
+      "profile_image_url":"http:\/\/pbs.twimg.com\/profile_images\/485541194575785984\/WpNi1ijO_normal.jpeg",
+      "profile_image_url_https":"https:\/\/pbs.twimg.com\/profile_images\/485541194575785984\/WpNi1ijO_normal.jpeg",
+      "profile_banner_url":"https:\/\/pbs.twimg.com\/profile_banners\/2606130132\/1406463496",
+      "profile_link_color":"0084B4",
+      "profile_sidebar_border_color":"C0DEED",
+      "profile_sidebar_fill_color":"DDEEF6",
+      "profile_text_color":"333333",
+      "profile_use_background_image":true,
+      "default_profile":true,
+      "default_profile_image":false,
+      "following":false,
+      "follow_request_sent":false,
+      "notifications":false
+    },
+    "geo":null,
     "coordinates":null,
     "place":null,
     "contributors":null,
-    "retweet_count":2,"favorite_count":5,
+    "retweet_count":2,
+    "favorite_count":5,
     "entities":
       { "hashtags":[],"symbols":[],"user_mentions":[{"screen_name":"CodeNewbies",
     "name":"CodeNewbie",
@@ -2488,57 +2504,84 @@ SAMPLE_TWEETS = [
     "in_reply_to_user_id_str":null,
     "in_reply_to_screen_name":null,
     "user":
-      { "id":284281065
-        8,"id_str":"2842810658",
-    "name":"GirlDevelopIt SNJ",
-    "screen_name":"gdisnj",
-    "location":"South Jersey",
-    "profile_location":null,
-    "description":"Empowering adult women (18+) in South Jersey to learn how to program in a supportive and fun environment. Tweets by @brilliantpamela.",
-    "url":null,
-
-    "entities":
-      { "description":{"urls":[]}},"protected":false,
-    "followers_count":19,"friends_count":0,"listed_count":1,"created_at":"Tue Oct 07 00:33:19 +0000 2014",
-    "favourites_count":1,"utc_offset":-18000,"time_zone":"Eastern Time (US & Canada)",
-    "geo_enabled":false,
-    "verified":false,
-    "statuses_count":6,"lang":"en",
-    "contributors_enabled":false,
-    "is_translator":false,
-    "is_translation_enabled":false,
-    "profile_background_color":"FFFFFF",
-    "profile_background_image_url":"http:\/\/abs.twimg.com\/images\/themes\/theme1\/bg.png",
-    "profile_background_image_url_https":"https:\/\/abs.twimg.com\/images\/themes\/theme1\/bg.png",
-    "profile_background_tile":false,
-    "profile_image_url":"http:\/\/pbs.twimg.com\/profile_images\/519286300705173505\/4Res0Jwz_normal.png",
-    "profile_image_url_https":"https:\/\/pbs.twimg.com\/profile_images\/519286300705173505\/4Res0Jwz_normal.png",
-    "profile_banner_url":"https:\/\/pbs.twimg.com\/profile_banners\/2842810658\/1412643660",
-    "profile_link_color":"00A9B4",
-    "profile_sidebar_border_color":"FFFFFF",
-    "profile_sidebar_fill_color":"DDEEF6",
-    "profile_text_color":"333333",
-    "profile_use_background_image":true,
-    "default_profile":false,
-    "default_profile_image":false,
-    "following":false,
-    "follow_request_sent":false,
-    "notifications":false},"geo":null,
+      { "id":2842810658,
+        "id_str":"2842810658",
+        "name":"GirlDevelopIt SNJ",
+        "screen_name":"gdisnj",
+        "location":"South Jersey",
+        "profile_location":null,
+        "description":"Empowering adult women (18+) in South Jersey to learn how to program in a supportive and fun environment. Tweets by @brilliantpamela.",
+        "url":null,
+        "entities":
+          { "description":
+            { "urls": []  }
+          },
+        "protected":false,
+      "followers_count":19,
+      "friends_count":0,
+      "listed_count":1,
+      "created_at":"Tue Oct 07 00:33:19 +0000 2014",
+      "favourites_count":1,
+      "utc_offset":-18000,
+      "time_zone":"Eastern Time (US & Canada)",
+      "geo_enabled":false,
+      "verified":false,
+      "statuses_count":6,
+      "lang":"en",
+      "contributors_enabled":false,
+      "is_translator":false,
+      "is_translation_enabled":false,
+      "profile_background_color":"FFFFFF",
+      "profile_background_image_url":"http:\/\/abs.twimg.com\/images\/themes\/theme1\/bg.png",
+      "profile_background_image_url_https":"https:\/\/abs.twimg.com\/images\/themes\/theme1\/bg.png",
+      "profile_background_tile":false,
+      "profile_image_url":"http:\/\/pbs.twimg.com\/profile_images\/519286300705173505\/4Res0Jwz_normal.png",
+      "profile_image_url_https":"https:\/\/pbs.twimg.com\/profile_images\/519286300705173505\/4Res0Jwz_normal.png",
+      "profile_banner_url":"https:\/\/pbs.twimg.com\/profile_banners\/2842810658\/1412643660",
+      "profile_link_color":"00A9B4",
+      "profile_sidebar_border_color":"FFFFFF",
+      "profile_sidebar_fill_color":"DDEEF6",
+      "profile_text_color":"333333",
+      "profile_use_background_image":true,
+      "default_profile":false,
+      "default_profile_image":false,
+      "following":false,
+      "follow_request_sent":false,
+      "notifications":false
+    },
+    "geo":null,
     "coordinates":null,
     "place":null,
     "contributors":null,
-    "retweet_count":2,"favorite_count":2,
+    "retweet_count":2,
+    "favorite_count":2,
     "entities":
-      { "hashtags":[],"symbols":[],"user_mentions":[{"screen_name":"gdiphilly",
-    "name":"GirlDevelopIt Philly",
-    "id":345988223,"id_str":"345988223",
-    "indices":[93,103]},{"screen_name":"AllAboutNJ",
-    "name":"We Tweet NEW JERSEY",
-    "id":359029463,"id_str":"359029463",
-    "indices":[104,115]}],"urls":[{"url":"http:\/\/t.co\/krA6ndU0DG",
-    "expanded_url":"http:\/\/www.meetup.com\/Girl-Develop-It-South-Jersey\/events\/212703272\/",
-    "display_url":"meetup.com\/Girl-Develop-I\u2026",
-    "indices":[70,92]}]},"favorited":true,
+      { "hashtags":[],
+        "symbols":[],
+        "user_mentions":
+          [
+            { "screen_name":"gdiphilly",
+              "name":"GirlDevelopIt Philly",
+              "id":345988223,"id_str":"345988223",
+              "indices":[93,103]
+            },
+            { "screen_name":"AllAboutNJ",
+              "name":"We Tweet NEW JERSEY",
+              "id":359029463,
+              "id_str":"359029463",
+              "indices":[104,115]
+            }
+          ],
+        "urls":
+          [
+            { "url":"http:\/\/t.co\/krA6ndU0DG",
+              "expanded_url":"http:\/\/www.meetup.com\/Girl-Develop-It-South-Jersey\/events\/212703272\/",
+              "display_url":"meetup.com\/Girl-Develop-I\u2026",
+              "indices":[70,92]
+            }
+          ]
+      },
+    "favorited":true,
     "retweeted":false,
     "possibly_sensitive":false,
     "lang":"en"},{"created_at":"Fri Oct 17 18:47:02 +0000 2014",
@@ -2550,16 +2593,15 @@ SAMPLE_TWEETS = [
     "in_reply_to_user_id":215506582,"in_reply_to_user_id_str":"215506582",
     "in_reply_to_screen_name":"awkwardblkgrl",
     "user":
-      { "id":724266234
-        ,"id_str":"724266234",
-    "name":"AwkwardBlackGirlFans",
-    "screen_name":"FansofABG",
-    "location":"worldwide",
-    "profile_location":null,
-    "description":"official, unofficial twitter site for fans of the hit series the mis-adventures of awkward black girl. #awkwardblackgirl",
-    "url":"http:\/\/t.co\/D056n3YH2T",
-
-    "entities":
+      { "id":724266234,
+        "id_str":"724266234",
+        "name":"AwkwardBlackGirlFans",
+        "screen_name":"FansofABG",
+        "location":"worldwide",
+        "profile_location":null,
+        "description":"official, unofficial twitter site for fans of the hit series the mis-adventures of awkward black girl. #awkwardblackgirl",
+        "url":"http:\/\/t.co\/D056n3YH2T",
+        "entities":
       { "url":{"urls":[{"url":"http:\/\/t.co\/D056n3YH2T",
     "expanded_url":"http:\/\/www.awkwardblackgirl.com",
     "display_url":"awkwardblackgirl.com",
@@ -2794,20 +2836,27 @@ SAMPLE_TWEETS = [
     "in_reply_to_user_id_str":null,
     "in_reply_to_screen_name":null,
     "user":
-      { "id":600564598
-        ,"id_str":"600564598",
-    "name":"Mel Larsen",
-    "screen_name":"Mel_A_Larsen",
-    "location":"Boston, MA (Roslindale!)",
-    "profile_location":null,
-    "description":"Out professional queer woman. Work: Outreach @CCDD_HSPH @HarvardHSPH. Study: @SimmonsMgt. Play: repro justice, Italia, tech, @thefemmeshow. Future @WNBA CEO.",
-    "url":"http:\/\/t.co\/cej7qKlxzh",
-
-    "entities":
-      { "url":{"urls":[{"url":"http:\/\/t.co\/cej7qKlxzh",
-    "expanded_url":"http:\/\/melalarsen.com\/",
-    "display_url":"melalarsen.com",
-    "indices":[0,22]}]},"description":{"urls":[]}},"protected":false,
+      { "id":600564598,
+        "id_str":"600564598",
+        "name":"Mel Larsen",
+        "screen_name":"Mel_A_Larsen",
+        "location":"Boston, MA (Roslindale!)",
+        "profile_location":null,
+        "description":"Out professional queer woman. Work: Outreach @CCDD_HSPH @HarvardHSPH. Study: @SimmonsMgt. Play: repro justice, Italia, tech, @thefemmeshow. Future @WNBA CEO.",
+        "url":"http:\/\/t.co\/cej7qKlxzh",
+        "entities":
+        { "url":
+          { "urls":
+            [
+              { "url":"http:\/\/t.co\/cej7qKlxzh",
+                "expanded_url":"http:\/\/melalarsen.com\/",
+                "display_url":"melalarsen.com",
+                "indices":[0,22]
+              }
+            ]
+          },
+          "description":{"urls":[]}},
+      "protected":false,
     "followers_count":641,"friends_count":1690,"listed_count":23,"created_at":"Wed Jun 06 01:08:10 +0000 2012",
     "favourites_count":344,"utc_offset":-18000,"time_zone":"Eastern Time (US & Canada)",
     "geo_enabled":false,
@@ -2977,8 +3026,8 @@ SAMPLE_TWEETS = [
     "in_reply_to_user_id_str":null,
     "in_reply_to_screen_name":null,
     "user":
-      { "id":124352791
-        ,"id_str":"124352791",
+      { "id":124352791,
+      "id_str":"124352791",
     "name":"Matt Baume",
     "screen_name":"MattBaume",
     "location":"Capitol Hill, Seattle",
