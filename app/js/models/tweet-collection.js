@@ -12,3 +12,9 @@ TweetCollection.prototype.fetch = function() {
 
   return this.models;
 };
+
+TweetCollection.prototype.find = function(id) {
+  return _.find(this.models, function(tweet) {
+    return tweet.id === id || tweet.id_str === id;
+  }, this);
+};
