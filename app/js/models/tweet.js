@@ -9,3 +9,8 @@ function Tweet (tweet_data) {
   this.urls = tweet_data.entities.urls;
   this.created_at = tweet_data.created_at;
 }
+
+Tweet.prototype.searchByText = function (searchText) {
+  downcasedSearchText = searchText.toLowerCase();
+  return this.text.toLowerCase().indexOf(downcasedSearchText) !== -1;
+};
