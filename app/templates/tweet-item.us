@@ -1,0 +1,3 @@
+<li id="<%= 'tweet_' + id_str %>">
+  <strong><%= user.screen_name %></strong> - <%= text %>
+</li>
