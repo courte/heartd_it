@@ -14,3 +14,9 @@ Tweet.prototype.searchByText = function(searchText) {
   var downcasedSearchText = searchText.toLowerCase();
   return this.text.toLowerCase().indexOf(downcasedSearchText) !== -1;
 };
+
+Tweet.prototype.searchByUser = function(searchText) {
+  var downcasedSearchText = searchText.toLowerCase();
+  var userDataAsText = this.user.name.toLowerCase() + " " + this.user.screen_name.toLowerCase();
+  return userDataAsText.indexOf(downcasedSearchText) !== -1;
+};
