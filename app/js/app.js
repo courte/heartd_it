@@ -2,6 +2,7 @@ var App = {
   init: function() {
     this.$el = $("#content");
     this.tweets = new TweetCollection();
+    this.search = new SearchView(this.tweets);
 
     this.tweets.fetch();
     this.displayTweetList();
