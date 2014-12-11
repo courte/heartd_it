@@ -18,3 +18,9 @@ TweetCollection.prototype.find = function(id) {
     return tweet.id === id || tweet.id_str === id;
   }, this);
 };
+
+TweetCollection.prototype.filterContentBy = function(searchText) {
+  return _.filter(this.models, function(tweet) {
+    return tweet.searchByText(searchText) || tweet.searchByUser(searchText);
+  }, this);
+};
