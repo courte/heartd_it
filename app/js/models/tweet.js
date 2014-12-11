@@ -10,7 +10,7 @@ function Tweet (tweet_data) {
   this.created_at = tweet_data.created_at;
 }
 
-Tweet.prototype.searchByText = function (searchText) {
-  downcasedSearchText = searchText.toLowerCase();
+Tweet.prototype.searchByText = function(searchText) {
+  var downcasedSearchText = searchText.toLowerCase();
   return this.text.toLowerCase().indexOf(downcasedSearchText) !== -1;
 };
