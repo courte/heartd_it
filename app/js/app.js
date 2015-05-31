@@ -4,8 +4,7 @@ var App = {
     this.tweets = new TweetCollection();
     this.search = new SearchView(this.tweets);
 
-    this.tweets.fetch();
-    this.displayTweetList();
+    this.fetchTweetList("courteneyervin");
 
     return this.$el;
   },
@@ -22,6 +21,14 @@ var App = {
     }
 
     this.$el.html(listView.render());
+  },
+
+  fetchTweetList: function(username) {
+    this.tweets.fetch(username)
+    .done( function(tweetData) {
+      this.tweets.compile(tweetData);
+      this.displayTweetList();
+    }.bind(this));
   }
 };
 

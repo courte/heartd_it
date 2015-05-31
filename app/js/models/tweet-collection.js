@@ -3,10 +3,19 @@ function TweetCollection() {
   this.models = [];
 }
 
-TweetCollection.prototype.fetch = function() {
+TweetCollection.prototype.fetch = function(username) {
+  return $.ajax({
+    type: 'GET',
+    url: '/twitter/' + username,
+    data: {'count': 10},
+    dataType: 'JSON'
+  });
+};
+
+TweetCollection.prototype.compile = function(favorites) {
   this.models = [];
 
-  _.map(SAMPLE_TWEETS, function(tweet_data) {
+  _.map(favorites, function(tweet_data) {
     this.models.push(new this.model(tweet_data));
   }, this);
 
