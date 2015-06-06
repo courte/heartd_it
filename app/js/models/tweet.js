@@ -7,7 +7,7 @@ function Tweet (tweet_data) {
     screenName: tweet_data.user.screen_name
   };
   this.urls = tweet_data.entities.urls;
-  this.created_at = tweet_data.created_at;
+  this.createdAt = tweet_data.created_at;
 }
 
 Tweet.prototype.searchByText = function(searchText) {
