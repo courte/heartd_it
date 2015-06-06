@@ -30,6 +30,6 @@ TweetCollection.prototype.find = function(id) {
 
 TweetCollection.prototype.filterContentBy = function(searchText) {
   return _.filter(this.models, function(tweet) {
-    return tweet.searchByText(searchText) || tweet.searchByUser(searchText);
+    return tweet.searchText(searchText) || tweet.searchUser(searchText);
   }, this);
 };
