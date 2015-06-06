@@ -4,7 +4,7 @@ function Tweet (tweet_data) {
   this.text = tweet_data.text;
   this.user = {
     name: tweet_data.user.name,
-    screen_name: tweet_data.user.screen_name
+    screenName: tweet_data.user.screen_name
   };
   this.urls = tweet_data.entities.urls;
   this.created_at = tweet_data.created_at;
@@ -17,6 +17,6 @@ Tweet.prototype.searchByText = function(searchText) {
 
 Tweet.prototype.searchByUser = function(searchText) {
   var downcasedSearchText = searchText.toLowerCase();
-  var userDataAsText = this.user.name.toLowerCase() + " " + this.user.screen_name.toLowerCase();
+  var userDataAsText = this.user.name.toLowerCase() + " " + this.user.screenName.toLowerCase();
   return userDataAsText.indexOf(downcasedSearchText) !== -1;
 };
