@@ -1,13 +1,13 @@
-function Tweet (tweet_data) {
-  this.id = tweet_data.id;
-  this.idStr = tweet_data.id_str;
-  this.text = tweet_data.text;
+function Tweet (tweetData) {
+  this.id = tweetData.id;
+  this.idStr = tweetData.id_str;
+  this.text = tweetData.text;
   this.user = {
-    name: tweet_data.user.name,
-    screenName: tweet_data.user.screen_name
+    name: tweetData.user.name,
+    screenName: tweetData.user.screen_name
   };
-  this.urls = tweet_data.entities.urls;
-  this.createdAt = tweet_data.created_at;
+  this.urls = tweetData.entities.urls;
+  this.createdAt = tweetData.created_at;
 }
 
 Tweet.prototype.searchByText = function(searchText) {
