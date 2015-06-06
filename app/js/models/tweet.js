@@ -10,12 +10,12 @@ function Tweet (tweetData) {
   this.createdAt = tweetData.created_at;
 }
 
-Tweet.prototype.searchByText = function(searchText) {
+Tweet.prototype.searchText = function(searchText) {
   var downcasedSearchText = searchText.toLowerCase();
   return this.text.toLowerCase().indexOf(downcasedSearchText) !== -1;
 };
 
-Tweet.prototype.searchByUser = function(searchText) {
+Tweet.prototype.searchUser = function(searchText) {
   var downcasedSearchText = searchText.toLowerCase();
   var userDataAsText = this.user.name.toLowerCase() + " " + this.user.screenName.toLowerCase();
   return userDataAsText.indexOf(downcasedSearchText) !== -1;
