@@ -1,6 +1,6 @@
 function Tweet (tweet_data) {
   this.id = tweet_data.id;
-  this.id_str = tweet_data.id_str;
+  this.idStr = tweet_data.id_str;
   this.text = tweet_data.text;
   this.user = {
     name: tweet_data.user.name,
