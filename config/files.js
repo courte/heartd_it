@@ -8,6 +8,13 @@
 module.exports = function(lineman) {
   //Override file patterns here
   return {
+    css: {
+      vendor: [
+        "vendor/css/normalize.css",
+        "vendor/css/foundation.css",
+        "vendor/css/**/*.css"
+      ]
+    },
     js: {
       vendor: [
         "vendor/js/underscore.js",
