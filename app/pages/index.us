@@ -6,11 +6,35 @@
     <link rel="stylesheet" type="text/css" href="<%= css %>" media="all" />
   </head>
   <body>
-    <form id="search">
-      <input id="search-text" type="text" />
-    </form>
+    <div class="fixed">
+      <nav class="top-bar" data-topbar role="navigation">
+        <div class="row">
+          <div class="small-2 columns">
+            <ul class="title-area">
+              <li class="name">
+                <h1><a href="#">Heart'd It</a></h1>
+              </li>
+            </ul>
+          </div>
+
+          <div class="small-10 columns">
+            <section class="top-bar-section">
+              <ul class="right">
+                <li class="has-form">
+                  <form id="search">
+                    <input id="search-text" type="text"/>
+                  </form>
+                </li>
+              </ul>
+            </section>
+          </div>
+        </div>
+      </nav>
+    </div>
+
     <div id="content">
     </div>
+
     <script type="text/javascript" src="<%= js %>"></script>
   </body>
 </html>

@@ -1,4 +1,3 @@
-.hello {
-  background-color: #efefef;
-  border: 1px solid #dedede;
+ul.right, .has-form {
+  min-width: 100%;
 }
