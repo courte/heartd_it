@@ -3,6 +3,18 @@
   padding-top: 45px;
 }
 
+/* Navigation*/
 ul.right, .has-form {
   min-width: 100%;
+}
+
+/* Tweets */
+.tweet {
+  border: solid gray 1px;
+  -webkit-border-radius: 1% 1%;
+  -moz-border-radius: 1% 1%;
+  -ms-border-radius: 1% 1%;
+  -o-border-radius: 1% 1%;
+  border-radius: 0.25em 0.25em;
+  padding: 1% 2%;
 }
